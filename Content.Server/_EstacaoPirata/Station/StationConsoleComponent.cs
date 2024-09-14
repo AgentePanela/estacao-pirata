@@ -1,4 +1,5 @@
 using Content.Server.UserInterface;
+using Content.Shared._EstacaoPirata.Station;
 using Robust.Shared.Audio;
 
 namespace Content.Server._EstacaoPirata.Station

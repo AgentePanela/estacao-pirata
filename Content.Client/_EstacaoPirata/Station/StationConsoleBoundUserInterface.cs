@@ -1,6 +1,6 @@
 using Content.Shared.CCVar;
 using Content.Shared.Chat;
-using Content.Shared.Communications;
+using Content.Shared._EstacaoPirata.Station;
 using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
 
@@ -9,7 +9,7 @@ namespace Content.Client._EstacaoPirata.Station
     public sealed class StationConsoleBoundUserInterface : BoundUserInterface
     {
         [ViewVariables]
-        private StationConsoleWindow? _window;
+        private StationConsoleMenu? _window;
 
         public StationConsoleBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
         {
@@ -18,7 +18,7 @@ namespace Content.Client._EstacaoPirata.Station
         {
             base.Open();
 
-            _window = new StationConsoleWindow
+            _window = new StationConsoleMenu
             {
                 //Title = Loc.GetString("medipen-refiller-bound-user-interface-title"),
                 Title = "Station Console"
@@ -43,4 +43,5 @@ namespace Content.Client._EstacaoPirata.Station
                 _window?.Dispose();
             }
         }
+    }
 }
