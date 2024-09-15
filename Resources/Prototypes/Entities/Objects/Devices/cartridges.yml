@@ -1,5 +1,20 @@
 ﻿- type: entity
   parent: BaseItem
+  id: TestCartridge
+  name: Test cartridge
+  description: A test cartridge
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-y
+  - type: Cartridge
+    programName: Test
+    icon:
+      sprite: Interface/Misc/program_icons.rsi
+      state: test
+
+- type: entity
+  parent: BaseItem
   id: NotekeeperCartridge
   name: notekeeper cartridge
   description: A program for keeping notes
@@ -11,9 +26,10 @@
     ui: !type:NotekeeperUi
   - type: Cartridge
     programName: notekeeper-program-name
+    programDesc: notekeeper-program-desc
     icon:
-      sprite:  Objects/Misc/books.rsi
-      state: book_icon
+      sprite: Interface/Misc/program_icons.rsi
+      state: notepad
   - type: NotekeeperCartridge
 
 - type: entity
@@ -29,6 +45,7 @@
     ui: !type:NewsReaderUi
   - type: Cartridge
     programName: news-read-program-name
+    programDesc: news-read-program-desc
     icon:
       sprite: Interface/Misc/program_icons.rsi
       state: news_read
@@ -47,6 +64,7 @@
       ui: !type:CrewManifestUi
     - type: Cartridge
       programName: crew-manifest-program-name
+      programDesc: crew-manifest-program-desc
       icon:
         sprite: Interface/Misc/program_icons.rsi
         state: crew_manifest
@@ -65,9 +83,10 @@
       ui: !type:NetProbeUi
     - type: Cartridge
       programName: net-probe-program-name
+      programDesc: net-probe-program-desc
       icon:
-        sprite: Structures/Machines/server.rsi
-        state: server
+        sprite: Interface/Misc/program_icons.rsi
+        state: test
     - type: NetProbeCartridge
 
 - type: entity
@@ -86,9 +105,10 @@
       ui: !type:LogProbeUi
     - type: Cartridge
       programName: log-probe-program-name
+      programDesc: log-probe-program-desc
       icon:
-        sprite: Structures/Doors/Airlocks/Standard/security.rsi
-        state: closed
+        sprite: Interface/Misc/program_icons.rsi
+        state: test
     - type: LogProbeCartridge
     - type: GuideHelp
       guides:

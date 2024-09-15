@@ -1,10 +1,10 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "news_read by Misha_Unity, crew_manifest by Phill101",
+    "copyright": "news_read, crew_manifest, notepad, test by AgentePanela",
     "size": {
-      "x": 32,
-      "y": 32
+      "x": 64,
+      "y": 64
     },
     "states": [
       {
@@ -12,6 +12,12 @@
       },
       {
         "name": "crew_manifest"
-      }
+      },
+	  {
+        "name": "test"
+      },
+	  {
+		"name": "notepad"
+	  }
     ]
 }

@@ -16,6 +16,9 @@ public sealed partial class CartridgeComponent : Component
     [DataField(required: true)]
     public LocId ProgramName = "default-program-name";
 
+    [DataField(required: true)]
+    public LocId ProgramDesc = "default-program-desc";
+
     [DataField]
     public SpriteSpecifier? Icon;
 

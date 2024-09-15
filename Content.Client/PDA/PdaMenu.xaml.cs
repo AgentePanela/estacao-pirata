@@ -217,7 +217,7 @@ namespace Content.Client.PDA
             foreach (var (uid, component) in programs)
             {
                 //Create a new row every second program item starting from the first
-                if (itemCount % 2 != 0)
+                if (itemCount % 99 != 0)
                 {
                     row = CreateProgramListRow();
                     ProgramList.AddChild(row);
@@ -238,22 +238,26 @@ namespace Content.Client.PDA
                         item.InstallButton.OnPressed += _ => OnInstallButtonPressed?.Invoke(uid);
                         break;
                     case InstallationStatus.Installed:
-                        item.InstallButton.Visible = true;
+                        item.InstallButton.Visible = true; //desativar botao de desinstalar
                         item.InstallButton.Text = Loc.GetString("cartridge-bound-user-interface-uninstall-button");
                         item.InstallButton.OnPressed += _ => OnUninstallButtonPressed?.Invoke(uid);
                         break;
                 }
 
                 item.ProgramName.Text = Loc.GetString(component.ProgramName);
-                item.SetHeight = 20;
+                item.ProgramDesc.Text = Loc.GetString(component.ProgramDesc);
+
+                item.SetHeight = 60;
                 row.AddChild(item);
 
                 itemCount++;
             }
 
             //Add a filler item to the last row when it only contains one item
+            /*
             if (itemCount % 2 == 0)
                 row.AddChild(new Control() { HorizontalExpand = true });
+            */
         }
 
         /// <summary>

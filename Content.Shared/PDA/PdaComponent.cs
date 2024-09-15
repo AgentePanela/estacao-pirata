@@ -27,6 +27,11 @@ namespace Content.Shared.PDA
         [DataField("paiSlot")]
         public ItemSlot PaiSlot = new();
 
+        // cor do wallpaper
+        [ViewVariables]
+        [DataField]
+        public string WallpaperColor = "#202023";
+
         // Really this should just be using ItemSlot.StartingItem. However, seeing as we have so many different starting
         // PDA's and no nice way to inherit the other fields from the ItemSlot data definition, this makes the yaml much
         // nicer to read.
