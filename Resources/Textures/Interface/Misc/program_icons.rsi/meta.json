@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "news_read, crew_manifest, notepad, test by AgentePanela",
+    "copyright": "news_read, crew_manifest, notepad, test, messager by AgentePanela",
     "size": {
       "x": 64,
       "y": 64
@@ -18,6 +18,9 @@
       },
 	  {
 		"name": "notepad"
+	  },
+	  {
+		"name": "messager"
 	  }
     ]
 }

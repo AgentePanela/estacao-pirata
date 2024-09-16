@@ -1,20 +1,5 @@
 ﻿- type: entity
   parent: BaseItem
-  id: TestCartridge
-  name: Test cartridge
-  description: A test cartridge
-  components:
-  - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
-    state: cart-y
-  - type: Cartridge
-    programName: Test
-    icon:
-      sprite: Interface/Misc/program_icons.rsi
-      state: test
-
-- type: entity
-  parent: BaseItem
   id: NotekeeperCartridge
   name: notekeeper cartridge
   description: A program for keeping notes
@@ -31,6 +16,38 @@
       sprite: Interface/Misc/program_icons.rsi
       state: notepad
   - type: NotekeeperCartridge
+
+- type: entity
+  parent: BaseItem
+  id: TestCartridge
+  name: Test cartridge
+  description: A test cartridge
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-y
+  - type: Cartridge
+    programName: Test
+    programDesc: Just a test program!
+    icon:
+      sprite: Interface/Misc/program_icons.rsi
+      state: test
+
+- type: entity
+  parent: BaseItem
+  id: TestCartridge
+  name: Test cartridge
+  description: A test cartridge
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-y
+  - type: Cartridge
+    programName: Space Whatsapp
+    programDesc: Suas melhores fake news na palma da mão!
+    icon:
+      sprite: Interface/Misc/program_icons.rsi
+      state: messager
 
 - type: entity
   parent: BaseItem
