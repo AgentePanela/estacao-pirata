@@ -24,8 +24,8 @@
   description: A test cartridge
   components:
   - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
-    state: cart-y
+    sprite: EstacaoPirata/Objects/Devices/cartridge.rsi
+    state: cart-test
   - type: Cartridge
     programName: Test
     programDesc: Just a test program!
@@ -35,19 +35,22 @@
 
 - type: entity
   parent: BaseItem
-  id: TestCartridge
-  name: Test cartridge
-  description: A test cartridge
+  id: MessagerCartridge
+  name: NanoZap cartridge
+  description: Your best message app in the space!
   components:
   - type: Sprite
-    sprite: Objects/Devices/cartridge.rsi
-    state: cart-y
+    sprite: EstacaoPirata/Objects/Devices/cartridge.rsi
+    state: cart-msg
+  - type: UIFragment
+    ui: !type:MessengerUi
   - type: Cartridge
-    programName: Space Whatsapp
-    programDesc: Suas melhores fake news na palma da mão!
+    programName: NanoZap
+    programDesc: Suas melhores fake news espaciais na palma da mão!
     icon:
       sprite: Interface/Misc/program_icons.rsi
       state: messager
+  - type: MessengerCartridge
 
 - type: entity
   parent: BaseItem

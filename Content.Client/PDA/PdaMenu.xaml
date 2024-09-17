@@ -71,6 +71,11 @@
                                        Access="Public"
                                        Text="Cor do wallpaper"
                                        Description="Muda a cor do wallpaper do seu PDA"/>
+                <!-- deletar aplicativos opcionais -->
+                <pda:PdaSettingsButton Name="AppDeleteteButton"
+                                       Access="Public"
+                                       Text="Apagar dados"
+                                       Description="Apaga seus aplicativos instalados"/>
                 <!-- musica (apenas musico) -->
                 <!-- TODO: passar para um programa -->
                 <pda:PdaSettingsButton Name="ActivateMusicButton"

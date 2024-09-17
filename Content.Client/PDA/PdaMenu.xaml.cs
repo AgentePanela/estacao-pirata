@@ -238,7 +238,7 @@ namespace Content.Client.PDA
                         item.InstallButton.OnPressed += _ => OnInstallButtonPressed?.Invoke(uid);
                         break;
                     case InstallationStatus.Installed:
-                        item.InstallButton.Visible = true; //desativar botao de desinstalar
+                        item.InstallButton.Visible = false; //desativar botao de desinstalar
                         item.InstallButton.Text = Loc.GetString("cartridge-bound-user-interface-uninstall-button");
                         item.InstallButton.OnPressed += _ => OnUninstallButtonPressed?.Invoke(uid);
                         break;
