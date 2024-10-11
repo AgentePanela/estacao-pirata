@@ -35,7 +35,7 @@
 
 - type: entity
   parent: BaseItem
-  id: MessagerCartridge
+  id: MessengerCartridge
   name: NanoZap cartridge
   description: Your best message app in the space!
   components:

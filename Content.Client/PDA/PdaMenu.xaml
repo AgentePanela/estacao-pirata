@@ -28,9 +28,16 @@
                       HorizontalExpand="True"
                       MinSize="50 50"
                       Margin="8">
-            <ContainerButton Name="PdaOwnerButton">
+            <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="False">
+                <controls:StripeBack Name="WelcomeContainer">
+                    <PanelContainer>
+                        <Label Name="Welcome" Align="Center" Text="Error 404"/> <!-- !provisorio, botar lang -->
+                    </PanelContainer>
+                </controls:StripeBack>
+            </BoxContainer>
+            <!--<ContainerButton Name="PdaOwnerButton">
                 <RichTextLabel Name="PdaOwnerLabel" Access="Public"/>
-            </ContainerButton>
+            </ContainerButton> -->
             <ContainerButton Name="IdInfoButton">
                 <RichTextLabel Name="IdInfoLabel" Access="Public"/>
             </ContainerButton>
@@ -66,16 +73,18 @@
                                        Access="Public"
                                        Text="{Loc 'comp-pda-ui-ringtone-button'}"
                                        Description="{Loc 'comp-pda-ui-ringtone-button-description'}"/>
+                <!-- TODO: Fazer funcionar -->
                 <!-- cores! -->
                 <pda:PdaSettingsButton Name="AccessColorButton"
                                        Access="Public"
                                        Text="Cor do wallpaper"
                                        Description="Muda a cor do wallpaper do seu PDA"/>
-                <!-- deletar aplicativos opcionais -->
+                <!-- TODO: fazer todos poderem ser deletados, talvez deletando e recriando o componente?-->
+                <!-- deletar aplicativos opcionais
                 <pda:PdaSettingsButton Name="AppDeleteteButton"
                                        Access="Public"
                                        Text="Apagar dados"
-                                       Description="Apaga seus aplicativos instalados"/>
+                                       Description="Apaga seus aplicativos instalados"/> -->
                 <!-- musica (apenas musico) -->
                 <!-- TODO: passar para um programa -->
                 <pda:PdaSettingsButton Name="ActivateMusicButton"

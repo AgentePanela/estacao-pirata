@@ -72,8 +72,8 @@
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
     cartridgeSlot:
       priority: -1
@@ -182,8 +182,8 @@
     state: pda-interncadet
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
@@ -420,8 +420,8 @@
     state: pda-library
   - type: CartridgeLoader
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - GlimmerMonitorCartridge
 
@@ -446,8 +446,8 @@
     state: pda-lawyer
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
@@ -642,8 +642,8 @@
     state: pda-rd
   - type: CartridgeLoader # Nyanotrasen - Glimmer Monitor
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - GlimmerMonitorCartridge
 
@@ -663,8 +663,8 @@
     state: pda-science
   - type: CartridgeLoader # Nyanotrasen - Glimmer Monitor
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - GlimmerMonitorCartridge
 
@@ -699,8 +699,8 @@
     state: pda-hos
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
@@ -721,8 +721,8 @@
     state: pda-warden
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
@@ -742,8 +742,8 @@
     state: pda-security
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
@@ -780,8 +780,8 @@
   - type: CartridgeLoader
     uiKey: enum.PdaUiKey.Key
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - LogProbeCartridge
 
@@ -848,6 +848,15 @@
     borderColor: "#288e4d"
   - type: Icon
     state: pda-clear
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - NotekeeperCartridge
+    cartridgeSlot:
+      priority: -1
+      name: Cartridge
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
 
 - type: entity
   parent: BasePDA
@@ -1044,8 +1053,8 @@
     state: pda-detective
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
@@ -1073,8 +1082,8 @@
     state: pda-brigmedic
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge
@@ -1171,8 +1180,8 @@
     state: pda-seniorofficer
   - type: CartridgeLoader # DeltaV - Crime Assist + SecWatch
     preinstalled:
+      - MessengerCartridge
       - CrewManifestCartridge
-      - NotekeeperCartridge
       - NewsReaderCartridge
       - CrimeAssistCartridge
       - SecWatchCartridge

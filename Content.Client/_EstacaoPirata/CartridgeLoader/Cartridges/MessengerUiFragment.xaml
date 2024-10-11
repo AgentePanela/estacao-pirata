@@ -1,0 +1,45 @@
+<cartridges:MessengerUiFragment xmlns:cartridges="clr-namespace:Content.Client._EstacaoPirata.CartridgeLoader.Cartridges"
+                               xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                               xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                               xmlns:customControls="clr-namespace:Content.Client.Administration.UI.CustomControls"
+                               xmlns="https://spacestation14.io"
+                               Margin="1 0 2 0"
+                               Orientation="Vertical"
+                               HorizontalExpand="True"
+                               VerticalExpand="True">
+    <!--? nao esqueça de botar o MessengerUiFragment!!-->
+    <PanelContainer StyleClasses="BackgroundDark"></PanelContainer>
+    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" VerticalExpand="True">
+        <!-- channel list-->
+        <BoxContainer Orientation="Vertical" VerticalExpand="True" MinWidth="150">
+            <controls:StripeBack Name="ChannelsLabelContainer">
+                <PanelContainer>
+                    <Label Name="ChannelsLabel" Align="Center" Text="Channels"/>
+                </PanelContainer>
+            </controls:StripeBack>
+            <ScrollContainer>
+                <BoxContainer Orientation="Vertical" Name="ChannelContainer" HorizontalExpand="True" VerticalExpand="True"/>
+                <Button Name="ChannelGeral" Text="Geral" StyleClasses="ButtonColorGreen"/>
+            </ScrollContainer>
+        </BoxContainer>
+        <!-- messages -->
+        <BoxContainer Orientation="Vertical" HorizontalExpand="True" VerticalExpand="True">
+            <ScrollContainer HorizontalExpand="True" VerticalExpand="True" HScrollEnabled="True">
+                <BoxContainer Orientation="Vertical" Name="MessageContainer" HorizontalExpand="True" VerticalExpand="True"/>
+                <Button Name="PlaceholderMenssage" Text="Capitão: Mensagem placeholder irada"/>
+            </ScrollContainer>
+            <Label Name="InputPlaceholder" Align="Left" Text="Type a message:"/>
+            <LineEdit Name="Input" HorizontalExpand="True" SetHeight="32"/>
+        </BoxContainer>
+    </BoxContainer>
+    <!-- footer 
+    <BoxContainer Orientation="Horizontal" HorizontalExpand="True" Margin="5,5,5,5">
+        <Button
+            Name="NotificationSwitch"
+            ToolTip="{Loc news-reader-ui-mute-tooltip}"
+            MinWidth="20"/>
+        <RichTextLabel Margin="5,2,2,2" Name="ShareTime" VerticalAlignment="Top"/>
+        <customControls:VSeparator Margin="2 0"/>
+        <RichTextLabel Margin="5,2,2,2" Name="Author" VerticalAlignment="Top" HorizontalAlignment="Right"/>
+    </BoxContainer>-->
+</cartridges:MessengerUiFragment>

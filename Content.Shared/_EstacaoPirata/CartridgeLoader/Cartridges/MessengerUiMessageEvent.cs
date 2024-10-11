@@ -17,7 +17,7 @@ public sealed class MessengerUiMessageEvent : CartridgeMessageEvent
 [Serializable, NetSerializable]
 public enum MessengerUiAction
 {
-    Next,
-    Prev,
+    /*Next,
+    Prev,*/
     NotificationSwitch
 }

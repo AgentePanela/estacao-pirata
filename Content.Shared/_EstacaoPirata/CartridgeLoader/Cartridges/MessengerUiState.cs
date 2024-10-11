@@ -6,16 +6,16 @@ namespace Content.Shared._EstacaoPirata.CartridgeLoader.Cartridges;
 [Serializable, NetSerializable]
 public sealed class MessengerBoundUserInterfaceState : BoundUserInterfaceState
 {
-    public NewsArticle Article;
+    /*public NewsArticle Article;
     public int TargetNum;
-    public int TotalNum;
+    public int TotalNum;*/
     public bool NotificationOn;
 
     public MessengerBoundUserInterfaceState(NewsArticle article, int targetNum, int totalNum, bool notificationOn)
     {
-        Article = article;
+        /*Article = article;
         TargetNum = targetNum;
-        TotalNum = totalNum;
+        TotalNum = totalNum;*/
         NotificationOn = notificationOn;
     }
 }
