@@ -15,6 +15,7 @@
   supervisors: job-supervisors-cj  # Delta V - Change supervisor to chief justice
   access:
   - Service
+  - Justice
   - Lawyer
   - Maintenance
 
@@ -25,7 +26,7 @@
     back: ClothingBackpackLawyerFilled #DeltaV - stamp included
     shoes: ClothingShoesBootsLaceup
     id: LawyerPDA
-    ears: ClothingHeadsetSecurity
+    ears: ClothingHeadsetJustice
     pocket1: BookSecurity
   inhand:
     - BriefcaseBrownFilled

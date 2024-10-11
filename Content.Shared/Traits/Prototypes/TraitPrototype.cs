@@ -59,8 +59,38 @@ public sealed partial class TraitPrototype : IPrototype
     public List<string>? PsionicPowers { get; private set; } = default!;
 
     /// <summary>
+    ///     The list of all Spoken Languages that this trait adds.
+    /// </summary>
+    [DataField]
+    public List<string>? LanguagesSpoken { get; private set; } = default!;
+
+    /// <summary>
+    ///     The list of all Understood Languages that this trait adds.
+    /// </summary>
+    [DataField]
+    public List<string>? LanguagesUnderstood { get; private set; } = default!;
+
+    /// <summary>
+    ///     The list of all Spoken Languages that this trait removes.
+    /// </summary>
+    [DataField]
+    public List<string>? RemoveLanguagesSpoken { get; private set; } = default!;
+
+    /// <summary>
+    ///     The list of all Understood Languages that this trait removes.
+    /// </summary>
+    [DataField]
+    public List<string>? RemoveLanguagesUnderstood { get; private set; } = default!;
+
+    /// <summary>
     ///     The list of all Moodlets that this trait adds.
     /// </summary>
     [DataField]
     public List<ProtoId<MoodEffectPrototype>>? MoodEffects { get; private set; } = default!;
+
+    /// <summary>
+    ///     Gear that is given to the player, when they pick this trait.
+    /// </summary>
+    [DataField]
+    public ProtoId<EntityPrototype> TraitGear = default!;
 }
